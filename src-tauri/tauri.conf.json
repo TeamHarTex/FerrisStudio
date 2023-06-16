@@ -16,6 +16,16 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "window": {
+        "close": true,
+        "hide": true,
+        "show": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "startDragging": true
       }
     },
     "bundle": {
@@ -35,13 +45,14 @@
     },
     "windows": [
       {
+        "decorations": false,
         "fullscreen": false,
         "resizable": true,
         "title": "FerrisStudio",
-        "width": 800,
-        "height": 600,
-        "minWidth": 800,
-        "minHeight": 600
+        "width": 900,
+        "height": 675,
+        "minWidth": 900,
+        "minHeight": 675
       }
     ]
   }

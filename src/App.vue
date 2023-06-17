@@ -1,4 +1,5 @@
 <template>
+  <link href='https://fonts.googleapis.com/css?family=Inter:300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Inter:400' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Inter:700' rel='stylesheet' type='text/css'>
 
@@ -32,6 +33,23 @@
 
     <p class="welcome-desc">Create a new project to start from scratch.</p>
     <p class="welcome-desc">Open an existing project from the filesystem or version control system.</p>
+  </div>
+  <div class="project-buttons">
+    <div class="project-button">
+      <img class="project-button-image" src="https://api.iconify.design/fluent/add-square-16-filled.svg?width=80&height=80&color=%23007acc" alt="existingProject">
+      <br/>
+      <p class="button-label">Create New Project</p>
+    </div>
+    <div class="project-button">
+      <img class="existing-project project-button-image" src="https://api.iconify.design/fluent/folder-16-filled.svg?color=%23007acc&width=80&height=80" alt="existingProject">
+      <br/>
+      <p class="button-label">Open Existing Project</p>
+    </div>
+    <div class="project-button">
+      <img class="get-vcs project-button-image" src="https://api.iconify.design/fluent/branch-16-filled.svg?color=%23007acc&width=80&height=80" alt="existingProject">
+      <br/>
+      <p class="button-label">Get from VCS</p>
+    </div>
   </div>
 </template>
 
@@ -70,12 +88,7 @@ h1 {
 }
 
 p {
-  color: #FFFFFF;
-
   font-family: Inter, serif;
-  font-size: .8rem;
-  font-weight: 400;
-  text-align: center;
 }
 
 .app-title {
@@ -83,7 +96,7 @@ p {
   height: 50px;
   padding-left: 15px;
 
-  line-height: 25px;
+  line-height: 20px;
   text-align: center;
 }
 
@@ -98,8 +111,51 @@ p {
   right: 0;
 }
 
+.button-label {
+  margin-top: -65px;
+
+  color: #FFFFFF;
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-align: center;
+}
+
 .buttons {
   margin-left: auto;
+}
+
+.project-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 180px;
+}
+
+.project-button-image {
+  margin: 50px;
+  object-fit: cover;
+}
+
+.existing-project {
+  background: #B3E0FFBB;
+  border-radius: 10px;
+  border: solid #B3E0FF00;
+  margin: 60px;
+}
+
+.get-vcs {
+  background: #B3E0FFBB;
+  border-radius: 10px;
+  border: solid #B3E0FF00;
+  margin: 60px;
+}
+
+.project-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 75px;
 }
 
 .titlebar-button {
@@ -120,6 +176,9 @@ p {
 
 .welcome-desc {
   color: #C9CBCF;
+  font-size: .8rem;
+  font-weight: 400;
+  text-align: center;
 
   margin-top: 0;
 }
